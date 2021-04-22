@@ -1,0 +1,20 @@
+abs 	aabb 	 addu#aa#$0#bb 	    bgez#bb#1 		sub#aa#$0#bb
+beqz 	aabb 	 beq#aa#$0#bb
+bge 	aabbcc   slt#$at#aa#bb 	    beq#$at#$0#cc
+bgeu 	aabbcc   sltu#$at#aa#bb 	beq#$at#$0#cc
+bgt 	aabbcc   slt#$at#bb#aa  	bne#$at#$0#cc
+bgtu 	aabbcc   sltu#$at#bb#aa 	bne#$at#$0#cc
+ble 	aabbcc   slt#$at#bb#aa  	beq#$at#$0#cc
+bleu 	aabbcc   sltu#$at#bb#aa 	beq#$at#$0#cc
+blt 	aabbcc   slt#$at#aa#bb  	bne#$at#$0#cc
+bltu    aabbcc   sltu#$at#aa#bb     bne#$at#$0#cc
+bnez 	aabb     bne#aa#$0#bb
+b 		aa       bgez#$0#aa
+la 		aa	     lui#$at#u16        ori#aa#$at#l16
+li 		aa   	 lui#$at#u16 	    ori#aa#$at#l16	ori#aa#$0#i
+move 	aabb	 addu#aa#$0#bb
+mul		aabbcc   mult#bb#cc		    mflo#aa
+neg 	aabb     sub#aa#$0#bb
+negu    aabb     sub#aa#$0#bb
+nop		aa       or#$0#$0#$0
+not     aabb     not#aa#bb#$0
