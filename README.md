@@ -25,3 +25,10 @@ Pseudo-instruction:
     actual: mflo $8
     binary: 000000 00000 00000 01000 00000 010010
 ```
+View instruction template:
+```bash
+    >> sll
+    symbolic: sll $d, $t, 0
+    actual: sll $d, $t, 0x0
+    binary: 000000 00000 ttttt ddddd 00000 000000
+```
